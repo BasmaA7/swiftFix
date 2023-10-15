@@ -63,7 +63,7 @@
 }
 
 
-.section-bleu {
+.bleu {
   background-color: #094B72;
   display: flex;
   justify-content: center;
@@ -72,6 +72,7 @@
   color: #FFF;
   padding: 2rem;
   gap: 1rem;
+  height: 250px;
 }
 
 .section-bleu-up h3 {
@@ -118,7 +119,7 @@
 }
 
 .hero {
-  height:800px;
+  height: 750px;
   flex-shrink: 0;
   display: flex;
   justify-content: space-around;
@@ -182,7 +183,7 @@
 .image img {
 
   width: 501px;
-  height: 771.811px;
+  height: 771px;
 }
 
 
@@ -192,7 +193,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 140.5%;
-  color: #8B8C8C;
+  color: #4F4F4F;
 
 }
 
@@ -200,6 +201,8 @@
 
 .section-why {
   display: flex;
+  height: 700px;
+  background:#F2F7FF;
 
 }
 
@@ -209,22 +212,34 @@
   padding-top: 10px;
 }
 
-.section-why-right {}
+.section-why-right {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
 
 .y1 {
   display: flex;
-
 
 }
 
 .y2 {
   display: flex;
+
 }
 
 .caree1 {
-  border: #96acc3 1px solid;
-  border-radius: 10px;
-  background-color: ;
+  border-radius: 8px;
+  background-color: #FCFCFC;
+  text-align: start;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px;
+  box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
+
+  Show 4 more colors Bag Component instance
 }
 
 
@@ -251,8 +266,9 @@
   justify-content: center;
 }
 
-.client-section-global {
+.client-section {
   background-color: F2F7FF;
+
 }
 
 .client-section-global {
@@ -261,11 +277,12 @@
   width: 65%;
 
 }
+
 .sous-page {
-  border: solid 1px #96acc3;
+  border: #C4C4C4 1px solid;
   background: #FFF;
   border-radius: 8px;
-  
+
 }
 
 .sous-page p {
@@ -292,7 +309,7 @@
   font-size: 10px;
   line-height: 10px;
   text-align: center;
-  color: #87898C;
+  color: #33475B;
 }
 
 
@@ -341,6 +358,7 @@
 
 
 }
+
 .client-section {
   overflow: hidden;
 }
@@ -396,7 +414,7 @@
 .paragh-Q {
   color: var(--neutral-grey-6, #4F4F4F);
   font-family: Poppins;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 36px;
@@ -405,11 +423,15 @@
 
 }
 
+.Question {
+  height: 300px;
+}
+
 .Question-button button {
   background: #094B72;
   color: #fff;
   font-family: Poppins;
-  font-size: 22px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 36px;
@@ -463,17 +485,17 @@
 .liste a {
   color: #C4C4C4;
   text-decoration: none;
-  
+
 
 }
 
 .liste li {
   list-style: none;
-  
+
 }
 
 .fin-right {
-  
+
   gap: 80px;
 }
 
@@ -486,8 +508,140 @@
   font-size: 24px;
   font-style: normal;
 }
-.client-info{
-  display:  inline flex;
+
+.client-info {
+  display: inline;
   flex-direction: column;
-  ;
+}
+
+.contact {
+  background-color: #1082c4;
+  display: flex;
+  justify-content: space-between;
+  height: 450px;
+  background: #F2F7FF;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+
+  width: 500px;
+
+}
+
+.contact img {
+  height: 300px;
+  display: inline-flex;
+
+}
+
+.photo-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+
+
+}
+
+.contact-info h1 {
+  color: #094B72;
+  font-family: Playfair Display;
+  font-size: 50px;
+  font-style: normal;
+}
+
+.form-info {
+  color: aliceblue;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+input[type="submit"]{
+  color: #FCFCFC;
+  background-color: #094B72;
+  height: 50px;
+  width: 100px;
+ border-radius: 8px;
+}
+.section-service {
+  display: flex;
+  height: 700px;
+  background: #F2F7FF;
+
+}
+
+.section-service-left {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.section-service-right {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.y1 {
+  display: flex;
+  gap: 20px;
+
+}
+
+.y2 {
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+
+}
+
+.caree1 {
+  border-radius: 8px;
+  background-color: #FCFCFC;
+  text-align: start;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px;
+  box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
+
+}
+
+.p-service-left1 {
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.323px;
+  color: #094B72;
+}
+
+.p-service-left2 {
+  color:#2D2F30;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  /* 180% */
+  letter-spacing: 0.5px;
+}
+
+.about {
+  height: 750px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+  background-color: #F2F7FF;
+
 }
