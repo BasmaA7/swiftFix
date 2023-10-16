@@ -561,6 +561,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  
 }
 input[type="submit"]{
   color: #FCFCFC;
@@ -575,6 +577,16 @@ input[type="submit"]{
   background: #F2F7FF;
 
 }
+.form-info input{
+  border: none;
+  border-bottom: #094B72 solid 2px;
+
+}
+.form-info textarea{
+  border: none;
+  border-bottom: #094B72 solid 2px;
+}
+
 
 .section-service-left {
   display: flex;
