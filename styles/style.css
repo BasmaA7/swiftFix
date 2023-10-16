@@ -374,6 +374,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
 }
 
@@ -466,7 +467,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1082c4;
+ background-color:  #004D7B;
   height: 25px;
 
 }
@@ -480,6 +481,14 @@
   height: 300px;
   color: #C4C4C4;
 
+}
+
+
+
+.T-lists{
+  font-family: Inter;
+  font-size: 20px;
+  
 }
 
 .liste a {
@@ -512,6 +521,9 @@
 .client-info {
   display: inline;
   flex-direction: column;
+}
+.footer__list ul {
+  padding: 0;
 }
 
 .contact {
@@ -618,13 +630,14 @@ input[type="submit"]{
 .caree1 {
   border-radius: 8px;
   background-color: #FCFCFC;
-  text-align: start;
+  text-align: center;
   font-size: 14px;
-  line-height: 24px;
-  padding: 10px;
+  line-height: 20px;
   box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
-
+  width:  200px;
+  
 }
+ 
 
 .p-service-left1 {
   font-family: Playfair Display;
@@ -655,5 +668,8 @@ input[type="submit"]{
   justify-content: space-around;
   margin-bottom: 5rem;
   background-color: #F2F7FF;
+
+}
+.feedback{
 
 }
