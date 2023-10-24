@@ -36,6 +36,7 @@ body {
   width: 1110px;
   height: 100px;
   background: var(--neutral-white, #FFF);
+  position: relative;
 }
  
 .logo {
@@ -49,11 +50,13 @@ body {
   width: 30px;
 }
 
-.left-navbar {
+.left-navbar{
   display: flex;
   width: 450px;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
+
 }
 
 .menu ul {
@@ -242,8 +245,6 @@ body {
   line-height: 24px;
   padding: 10px;
   box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
-
-  Show 4 more colors Bag Component instance
 }
 
 
@@ -272,7 +273,7 @@ body {
 
 .client-section {
   background-color: F2F7FF;
- 
+  
 
 }
 
@@ -452,7 +453,6 @@ color:  #151617;
 
 
 
-
 .logo-footer {
 
   display: flex;
@@ -481,9 +481,16 @@ color:  #151617;
   color: #C4C4C4;
 
 }
+ 
+.search-bar{
+  display: flex;
+  gap: 4px;
+  
+}
+.search-bar input{
 
-
-
+border-radius: 8px;
+}
 .T-lists{
   font-family: Inter;
   font-size: 20px;
@@ -531,6 +538,7 @@ color:  #151617;
   justify-content: space-between;
   height: 450px;
   background: #F2F7FF;
+ 
 }
 
 .contact-info {
@@ -672,21 +680,77 @@ input[type="submit"]{
   background-color: #F2F7FF;
 
 }
+.burgermenu span{
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  display: block; 
+  cursor: pointer;
+}
+.line{
+ margin: 5px;
+
+}
+  
+  .burgermenu{
+   display: none;
+     align-items: end;
+    }
+   .select-sv{
+    background-color: #094B72;
+    display: flex;
+   flex-direction: column;
+   position: absolute;
+   top: 70px;
+    width: min-content;
+    padding: 20px;
+    border-radius: 6px;
+    
+ 
+  }
+  .select-sv >li>a{
+   color: #F2F7FF;
+  }
+  
+  
+/*_______________________*/
 /* Start Page Home*/
  /*nav section*/
 @media (max-width:767px) {
+  .left-navbar{
+    justify-content: flex-end;
+  }
   .logo span{
- font-size: 14px;
+ font-size: calc(0.5rem+1.5);
   }
   .logo img{
     width: 25%;
   }
-  .search-bar{
-    display: none;
-  }
+  
   .section-hero-right {
     display: none;
   }
+  .burgermenu{
+    display: block;
+  }
+  
+  .left-navbar ul{
+    display: none;
+  }
+  #menu.show{
+    display: block;
+    background-color: #094B72;
+    position: absolute;
+    bottom: -100px;
+    
+    
+  }
+  #menu.show a{
+    color: #FCFCFC;
+
+    
+  }
+ 
 } 
   /*end nav section*/
 
@@ -711,7 +775,12 @@ input[type="submit"]{
       font-size: 18px;
 
     }
-    
+    .images{
+      align-items: center;
+    }
+    .images p{
+      font-size: 12px;
+    }
   }
   /*end hero section */
    
@@ -816,21 +885,45 @@ input[type="submit"]{
    }
   }
  /* end client-section*/
+
+ /* start footer section*/
+ 
 /*End page Home*/
+ 
+
 
 /* Start About page */
   /*nav section*/
 @media (max-width:767px) {
   .logo span{
- font-size: 14px;
+ font-size: calc(0.5rem+1.5vw);
   }
   .logo img{
     width: 25%;
   }
-  .search-bar{
-    display: none;
+  
+} 
+/* End About page */
+/*Start service page */
+@media (max-width:767px){
+
+}
+/* end service*/
+
+/*staart contact*/
+@media(max-width:767px){
+  .contact{
+    flex-wrap: wrap;
+    height: auto;
+ justify-content: center;
+  }
+  .contact-info h1{
+    font-size: 23px;
+ 
+  }
+  .form-info input{
+    width: auto;
 
   }
-} 
 
-/* End About page */
+}
