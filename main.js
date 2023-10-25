@@ -5,12 +5,21 @@ const burger = document.querySelector(".burgermenu");
       burger.classList.toggle('active');
       console.log("text");
    });
-const navServ = document.querySelector(".left-navbar");
-const subselect = document.querySelector(".select-sv");
-subselect.addEventListener("click", ()=>{
-    navServ.classList.toggle("show");
-      subselect.classList.toggle('active');
-      console.log("text");
-   });
-    
-   
+  
+
+let input = document.querySelector(".input");
+let btn = document.querySelector(".btn");
+let parent = document.querySelector(".search");
+
+btn.addEventListener("click", () => {
+    parent.classList.toggle("active");
+});
+
+
+
+const button = document.querySelector(".faq-btn");
+const body = document.querySelector(".faq-body");
+
+button.addEventListener("click", () => {
+    body.classList.toggle("collapse")
+})
