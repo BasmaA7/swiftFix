@@ -6,20 +6,35 @@ const burger = document.querySelector(".burgermenu");
       console.log("text");
    });
   
-
+/*
 let input = document.querySelector(".input");
 let btn = document.querySelector(".btn");
 let parent = document.querySelector(".search");
-
 btn.addEventListener("click", () => {
     parent.classList.toggle("active");
 });
+ /
 
 
+/* FAQ section
+const button = document.querySelectorAll(".faq-btn");
+const body = document.querySelectorAll(".faq-body");
+console.log({button});
 
-const button = document.querySelector(".faq-btn");
-const body = document.querySelector(".faq-body");
+for (let i = 0; i < button.length; i++) {
+  button[i].addEventListener("click", ()=> {
+    body[i].classList.toggle("collapse")
+  })
+}*/
 
-button.addEventListener("click", () => {
-    body.classList.toggle("collapse")
-})
+ /*read more*/
+const read = document.querySelector('readM');
+const close = document.querySelector('close-B');
+const modalContinair =document.querySelector('model-continair');
+
+  read.addEventListener("click", ()=>{
+    modalContinair.classList.add('show');
+  })
+  close.addEventListener("click", ()=>{
+  modalContinair .classList.remove("show");
+ })
