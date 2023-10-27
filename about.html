@@ -18,27 +18,37 @@
   <header class="header container">
     <nav class="menu">
       <div class="logo">
-        <img src="img/Logo.svg" alt="">
-        <span>SwiftFix</span>
+          <img src="img/Logo.svg" alt="">
+          <span>SwiftFix</span>
       </div>
       <div class="left-navbar">
-        <ul>
-          <li><a href="index.html"> Home </a></li>
-          <li> <a href="about.html"> About </a></li>
-          <li> <a href="service.html"> Services </a></li>
-          <li> <a href="contact.html"> Contact </a></li>
-        </ul>
-        <div class="burgermenu">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
+          <ul id="menu">
+              <li><a href="index.html"> Home </a></li>
+              <li> <a href="about.html"> About </a></li>
+              <li> <a href="service.html"> Services </a></li>
+              <li> <a href="contact.html"> Contact </a></li>
+          </ul>
+          <div id="search_b">
+          <div class="search">
+              <input class="input" type="type" placeholder="Search..." />
 
+          </div>
+          <button class="btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
-        <div class="search-bar">
-          <a href=""><img src="img/SearchOutline.svg" alt=""></a>
-        </div>
+
+
+          <div class="burgermenu ">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+          </div>
+
+
       </div>
-    </nav>
+
+  </nav>
   </header>
   <!--End header-->
 
@@ -80,53 +90,47 @@
 
   <section class="faq-section container">
     <h1>FAQ</h1>
+
+
     <div class="faq">
       <div class="FAQS">
         <div class="Q1">
           <button class="faq-btn">
-            <span>Question 1</span>
+            <span>Do I need to pay for a Quotation?</span>
           </button>
           <div class="faq-body">
             <span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Consequuntur, dolorem facilis iste veniam quis minima debitis! Natus neque rerum veritatis! </span>
+              ALL of our Quotations are provided FOC (Free of Charge)
+              whether the customer is of an Industrial,
+              Commercial or Domestic nature.
+            </span>
           </div>
         </div>
-        <div class="Q2">
+        <div class="Q1">
           <button class="faq-btn">
-            <span> Question 2</span>
+            <span> How are Quotations provided?</span>
           </button>
           <div class="faq-body">
             <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex pariatur asperiores,
-              quas praesentium laborum quibusdam omnis labore dolorem ducimus ea! </span>
+              We usually provide Quotations via email if possible, this helps provide security of information and helps reduce confusion,
+               it allows the customer to easily keep the Quotation in there records and helps us reduce our impact on the environment by limiting the amount of paper and ink we use annually. </span>
+          </div>
+        </div>
+        <div class="Q1">
+          <button class="faq-btn">
+            <span>Do you add a charge for distance traveled?</span>
+          </button>
+          <div class="faq-body">
+            <span>
+              We do on some occasions charge the customer extra for distance traveled, this is dependent on the type of work carried out,
+               the distance we have to travel from our base and the amount of journeys taken. 
+             </span>
           </div>
         </div>
       </div>
 
-      <div class="FAQS">
-        <div class="Q1">
-          <button class="faq-btn">
-            <span>Question 3</span>
-          </button>
-          <div class="faq-body">
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Consequuntur, dolorem facilis iste veniam quis minima debitis! Natus neque rerum veritatis! </span>
-          </div>
-        </div>
-        <div class="Q2">
-          <button class="faq-btn">
-            <span> Question 4</span>
-          </button>
-          <div class="faq-body">
-            <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex pariatur asperiores,
-              quas praesentium laborum quibusdam omnis labore dolorem ducimus ea! </span>
-          </div>
-        </div>
-      </div>
-      
+
+
     </div>
 
   </section>
@@ -195,7 +199,8 @@
 
   </footer>
   <!-- End section Footer-->
-  <script src="main.js"></script>
+  <script src="burgerM.js"></script>
+  <script src="faq.js"></script>
 </body>
 
 
